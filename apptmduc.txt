@@ -1,0 +1,11 @@
+<?php
+
+define('DB_SERVER', 'ec2-52-44-55-63.compute-1.amazonaws.com');
+define('DB_USERNAME', 'vawkwntgkkxlno');
+define('DB_PASSWORD', 'cd31b692b432a1473bc8646d608ed82a1214cc0467ddd69eb836189dcc04b7a8');
+define('DB_NAME', 'd6m4t4imrhjr3t');
+ 
+/* Attempt to connect to PostgreSQL database */
+$link = pg_connect("host=".DB_SERVER." dbname=". DB_NAME ." user=" . DB_USERNAME . " password=" .DB_PASSWORD. "")
+		or die('Could not connect1: ' . pg_last_error());
+?>
